@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estética Automotiva ATOMS</title>
+
+<style>
+:root{
+  --neon:#00ffff;
+  --bg:#05060a;
+  --glass:rgba(0,255,255,.08);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  background:radial-gradient(circle at top,#001018,#000);
+  color:#fff;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px 30px;
+  background:rgba(0,0,0,.65);
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 25px #00ffff44;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.logo img{
+  width:60px;
+  height:60px;
+  object-fit:contain;
+}
+.logo span{
+  color:var(--neon);
+  font-size:1.4rem;
+  font-weight:700;
+  text-shadow:0 0 15px var(--neon);
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:600;
+}
+nav a:hover{color:var(--neon)}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:80px 20px 40px;
+}
+.hero h1{
+  color:var(--neon);
+  font-size:2.8rem;
+  text-shadow:0 0 25px var(--neon);
+}
+.hero p{
+  margin-top:20px;
+  font-size:1.2rem;
+  color:#ccc;
+}
+
+/* GALERIA */
+.gallery{
+  position:relative;
+  max-width:1100px;
+  height:450px;
+  margin:50px auto;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 0 35px #00ffff55;
+}
+.gallery img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0;
+  transition:opacity 1.2s ease;
+}
+.gallery img.active{opacity:1}
+
+/* SERVIÇOS */
+.services{
+  max-width:1100px;
+  margin:80px auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+.card{
+  background:var(--glass);
+  border:1px solid #00ffff44;
+  border-radius:16px;
+  padding:24px;
+  box-shadow:0 0 20px #00ffff22;
+}
+.card h3{
+  color:var(--neon);
+  margin-bottom:10px;
+}
+
+/* ORÇAMENTO */
+#orcamento{
+  max-width:600px;
+  margin:80px auto;
+  padding:30px;
+  background:rgba(0,0,0,.65);
+  border:1px solid #00ffff55;
+  border-radius:20px;
+  box-shadow:0 0 30px #00ffff33;
+}
+#orcamento h2{
+  text-align:center;
+  color:var(--neon);
+  margin-bottom:25px;
+}
+
+#orcamento input,
+#orcamento select{
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  border-radius:10px;
+  border:none;
+}
+
+#orcamento button{
+  width:100%;
+  padding:15px;
+  margin-top:15px;
+  font-size:1.1rem;
+  font-weight:700;
+  border:none;
+  border-radius:14px;
+  cursor:pointer;
+  background:linear-gradient(90deg,var(--neon),#0066ff);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <!-- COLOQUE SEU LOGO AQUI -->
+    <img src="logo.png" alt="Logo">
+    <span>Estética Automotiva @ATOMS</span>
+
+  </div>
+
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#orcamento">Orçamento</a>
+    <a href="https://wa.me/5511966036346" target="_blank">WhatsApp</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Seu carro em outro nível</h1>
+  <p>Qualidade, acabamento premium e atenção aos mínimos detalhes.</p>
+</section>
+
+<!-- SLIDE DE FOTOS -->
+<section class="gallery">
+ <img src="img/2024-11-20-10-07-35-900.jpg" class="active">
+<img src="img/20250505_124921.jpg">
+<img src="img/20250505_153050.jpg">
+<img src="img/20250505_153100.jpg">
+<img src="img/20250506_123637.jpg">
+<img src="img/20250506_123657.jpg">
+<img src="img/20250513_162113.jpg">
+<img src="img/20250513_162114.jpg">
+<img src="img/20250513_191242.jpg">
+<img src="img/20250513_191243.jpg">
+<img src="img/20250513_191251.jpg">
+<img src="img/20250513_191252.jpg">
+<img src="img/20250513_191256.jpg">
+<img src="img/20250603_153254.jpg">
+<img src="img/20250603_153255.jpg">
+<img src="img/20250603_153257.jpg">
+<img src="img/20250603_153258.jpg">
+<img src="img/20250603_153323.jpg">
+<img src="img/20250603_153324.jpg">
+<img src="img/20250603_153506.jpg">
+<img src="img/20250603_153516.jpg">
+<img src="img/20250603_153524.jpg">
+<img src="img/20250603_153527.jpg">
+<img src="img/20250603_155955.jpg">
+<img src="img/20250603_155956.jpg">
+<img src="img/20250603_160011.jpg">
+<img src="img/20250603_160017.jpg">
+<img src="img/20250603_160121.jpg">
+<img src="img/20250603_160123.jpg">
+<img src="img/20250603_160139.jpg">
+<img src="img/20250603_160202.jpg">
+<img src="img/20250603_160203.jpg">
+<img src="img/20250603_160206.jpg">
+<img src="img/20250604_071420.jpg">
+<img src="img/20250608_145634.jpg">
+<img src="img/20250608_150834.jpg">
+<img src="img/20250608_150838.jpg">
+<img src="img/20250614_141918.jpg">
+<img src="img/20250614_141941.jpg">
+<img src="img/20250614_142014.jpg">
+<img src="img/20250614_142021.jpg">
+<img src="img/20250614_142047.jpg">
+<img src="img/20250614_170134.jpg">
+<img src="img/20250614_170143.jpg">
+<img src="img/20250614_170144.jpg">
+<img src="img/20250617_140032.jpg">
+<img src="img/20250625_134214.jpg">
+<img src="img/20250625_134218.jpg">
+<img src="img/20250625_134225.jpg">
+<img src="img/20250625_134229.jpg">
+</section>
+
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="services">
+  <div class="card">
+    <h3>Películas / Insulfilm</h3>
+    <p>Proteção solar, conforto e privacidade.</p>
+  </div>
+  <div class="card">
+    <h3>Envelopamento</h3>
+    <p>Visual exclusivo e proteção da pintura.</p>
+  </div>
+  <div class="card">
+    <h3>Iluminação & LED</h3>
+    <p>Estilo moderno e acabamento premium.</p>
+  </div>
+  <div class="card">
+    <h3>Som & Multimídia</h3>
+    <p>Experiência sonora de alto nível.</p>
+  </div>
+</section>
+
+<!-- ORÇAMENTO -->
+<section id="orcamento">
+  <h2>Solicitar Orçamento</h2>
+
+  <input id="nome" placeholder="Seu nome">
+  <input id="carro" placeholder="Modelo do veículo">
+
+  <select id="servico">
+    <option>Películas / Insulfilm</option>
+    <option>Envelopamento Automotivo</option>
+    <option>Iluminação & LED</option>
+    <option>Som & Multimídia</option>
+    <option>Outro serviço</option>
+  </select>
+
+  <button onclick="enviarWhats()">Enviar pedido no WhatsApp</button>
+</section>
+
+<footer>
+  © 2025 Estética Automotiva Atilla
+</footer>
+
+<script>
+// SLIDE AUTOMÁTICO
+const slides = document.querySelectorAll(".gallery img");
+let index = 0;
+
+setInterval(()=>{
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+},4000);
+
+// WHATSAPP
+function enviarWhats(){
+  const nome = document.getElementById("nome").value;
+  const carro = document.getElementById("carro").value;
+  const servico = document.getElementById("servico").value;
+
+  if(!nome || !carro){
+    alert("Preencha seu nome e o modelo do veículo.");
+    return;
+  }
+
+  const mensagem = `
+Olá! 👋
+Seja muito bem-vindo à *Estética Automotiva Atilla*.
+
+Meu nome é Wellington e será um prazer cuidar do seu veículo 🚗✨
+
+📋 *Solicitação de Orçamento*
+👤 Cliente: ${nome}
+🚘 Veículo: ${carro}
+🛠 Serviço: ${servico}
+
+Em breve retorno com todas as informações.
+Fico à disposição para qualquer dúvida!
+  `.trim();
+
+  const url = "https://wa.me/5511966036346?text=" + encodeURIComponent(mensagem);
+  window.open(url,"_blank");
+}
+</script>
+
+</body>
+</html>
